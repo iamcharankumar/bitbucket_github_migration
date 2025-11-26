@@ -292,8 +292,6 @@ If you’re about to attempt the same: prepare the case-sensitive environment fi
 your removal patterns carefully, and use BFG for the heavy lifting.
 Then sit back while `git push --mirror` does the happy final dance.
 
-**Finally, the test automation repo migration was completed nice and clean, moving from Bitbucket to GitHub!**
-
 # EXTRAS
 
 ## Why BFG, not git filter-repo?
@@ -331,3 +329,5 @@ BFG internally scans history in a more optimized way by:
 `git filter-repo` is more powerful but way more picky and resource-hungry. My repo was simply too large.
 
 BFG handled it cleanly once run with proper Java.
+
+**Finally, the test automation repo migration was completed nice and clean, moving from Bitbucket to GitHub!**
