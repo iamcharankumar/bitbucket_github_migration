@@ -13,6 +13,9 @@ Readers should verify all steps in a safe, non-production environment before use
 
 Here’s How This Monstrous Migration Actually Happened
 
+<img width="600" height="360" alt="image" src="https://github.com/user-attachments/assets/9e18d33d-856a-48d4-8273-4a87aec6e662" />
+
+
 Migrating a tiny repo is easy. Just use the URL: http://github.com/new/import
 
 Migrating a mid-sized repo is doable.
@@ -256,6 +259,9 @@ cloc .
 
 **You'll see an output similar to the below image based on your repo's lines of code.
 So do it before and after migration for better validation.**
+
+<img width="652" height="400" alt="CLOC_output" src="https://github.com/user-attachments/assets/625235ac-c748-4371-9eaf-4d841208b997" />
+
 
 # Post-mortem checklist
 
