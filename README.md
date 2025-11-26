@@ -47,15 +47,15 @@ Executive Summary (one-sentence TL;DR)
 
 # Key Migration Metrics Table
 
-| Sl. No | Metric                                 | Command                                                          | Why It Matters                             |
-|--------|----------------------------------------|------------------------------------------------------------------|--------------------------------------------|
-| 1      | Total commits preserved                | `git rev-list --all --count`                                     | Ensures full historical continuity         |
-| 2      | Total Branches (local + remote)        | `git for-each-ref --format='%(refname)' refs/remotes  \| wc -l`  | Zero loss of parallel development          |
-| 3      | Total authors preserved                | `git log --format='%aN' \| sort -u \| wc -l`                     | Contributor integrity intact               |
-| 4      | Number of PRs & Line Changes Preserved | `git diff --shortstat $(git rev-list --max-parents=0 HEAD) HEAD` | PR history + diff fidelity                 |
-| 5      | Total refs (everything)                | `git show-ref \| wc -l`                                          | Guarantees complete reference preservation |
-| 6      | Oldest commit timestamp                | `git log --reverse --format="%ad" \| head -1`                    | Verifies root history intact               |
-| 7      | Latest commit timestamp                | `git log -1 --format="%ad"`                                      | Confirms continuity post-migration         |
+| Sl. No | Metric                                 | Command                                                          | Why It Matters                  |
+|--------|----------------------------------------|------------------------------------------------------------------|---------------------------------|
+| 1      | Total commits preserved                | `git rev-list --all --count`                                     | Full history migrated           |
+| 2      | Total Branches (local + remote)        | `git for-each-ref --format='%(refname)' refs/remotes  \| wc -l`  | Zero loss of development work   |
+| 3      | Total authors preserved                | `git log --format='%aN' \| sort -u \| wc -l`                     | Authorship integrity maintained |
+| 4      | Number of PRs & Line Changes Preserved | `git diff --shortstat $(git rev-list --max-parents=0 HEAD) HEAD` | PR diffs preserved end-to-end   |
+| 5      | Total refs (everything)                | `git show-ref \| wc -l`                                          | Shows all refs migrated         |
+| 6      | Oldest commit timestamp                | `git log --reverse --format="%ad" \| head -1`                    | shows repo age                  |
+| 7      | Latest commit timestamp                | `git log -1 --format="%ad"`                                      | confirms recent activity        |
 
 # Atomic tasks — the exact sequence you must follow
 
